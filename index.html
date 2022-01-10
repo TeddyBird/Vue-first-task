@@ -30,7 +30,7 @@
                         <td>{{item.oPrice}}</td>
                         <td>{{item.sPrice}}</td>
                         <td :style="item.onSale? onSaleColor : ''">{{item.onSale? "啟用":"未啟用"}}</td>
-                        <td><button type="button" @click="selected=item">查看細節</button></td>
+                        <td><button type="button" @click="selected = item, activeBtnChange(index)" :class="{active: activeBtn == index }">查看細節</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -63,6 +63,7 @@
         data(){
             return{
                 selected:"",
+                activeBtn:null,
                 products:[
                     {
                         name:"草莓莓果夾心圈",
@@ -100,6 +101,12 @@
            
                 ],
             }
+        },
+
+        methods: {
+            activeBtnChange(index){
+                this.activeBtn = index;
+            },
         },
 
         computed:{

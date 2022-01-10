@@ -51,6 +51,9 @@
 #app .list table tbody tr td button:hover {
   background-color: #0b0bc2;
 }
+#app .list table tbody tr td .active {
+  background-color: #0b0bc2;
+}
 #app .list p {
   padding: 10px;
 }
