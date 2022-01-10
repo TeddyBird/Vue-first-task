@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+#app .list {
+  width: 50%;
+  padding: 10px;
+}
+#app .list h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+#app .list table {
+  border-collapse: collapse;
+  font-size: 18px;
+  width: 100%;
+}
+#app .list table thead {
+  font-size: 20px;
+  text-align: left;
+}
+#app .list table thead tr {
+  border-bottom: 2px solid black;
+}
+#app .list table thead tr th {
+  padding: 10px;
+}
+#app .list table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+#app .list table tbody tr td {
+  padding: 5px 10px;
+}
+#app .list table tbody tr td button {
+  border: 5px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#app .list p {
+  padding: 10px;
+}
+#app .detail {
+  width: 50%;
+  padding: 10px;
+}
+#app .detail h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+#app .detail p {
+  color: #888;
+}
+#app .detail .product-card {
+  border: 1px solid #ccc;
+}
+#app .detail .product-card .pic img {
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+#app .detail .product-card .text {
+  padding: 10px;
+  font-size: 18px;
+}
+#app .detail .product-card .text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#app .detail .product-card .text h3 span {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+  font-size: 18px;
+}
+#app .detail .product-card .text p {
+  color: black;
+  margin-bottom: 10px;
+}
+#app .detail .product-card .text .oPrice {
+  text-decoration: line-through;
+  color: #888;
+}
+#app .detail .otherPics {
+  width: 100%;
+  display: flex;
+}
+#app .detail .otherPics .otherPic {
+  width: 25%;
+  margin: 5px;
+}
+#app .detail .otherPics .otherPic img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+  }
+  #app .list {
+    width: 100%;
+  }
+  #app .detail {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
