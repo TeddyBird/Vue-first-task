@@ -48,6 +48,9 @@
   padding: 10px;
   border-radius: 5px;
 }
+#app .list table tbody tr td button:hover {
+  background-color: #0b0bc2;
+}
 #app .list p {
   padding: 10px;
 }
